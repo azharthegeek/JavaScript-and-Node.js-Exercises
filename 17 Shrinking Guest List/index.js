@@ -5,16 +5,14 @@ const guest = [
     "Sameer"
 ]
 
-//alert(guest[1] + " is not comming to dinner Tommorrow");
+console.log(guest[1] + " is not comming to dinner Tommorrow");
 guest[1] = "Rizwan"
-    /*
-    for (let i = 0; i < guest.length; i++) {
-        alert("Assalam o Aliakum, " + guest[i] + ". Hope you are doing well, I am inviting you to my tomorrow dinner , to discuss the Web 3.0.");
-    }*/
-
+for (let i = 0; i < guest.length; i++) {
+    console.log("Assalam o Aliakum, " + guest[i] + ". Hope you are doing well, I am inviting you to my tomorrow dinner , to discuss the Web 3.0.");
+}
 //Add a print statement to the end of your program informing people that you found a bigger dinner table.
 
-//alert("Guys There is an Update, I found a bigger dinner table.")
+console.log("Guys There is an Update, I found a bigger dinner table.")
 
 //• Add one new guest to the beginning of your array.
 guest.unshift("Shahzad"); //Beginning
@@ -25,20 +23,34 @@ guest.push("Huzaifa") //End alternative .pop()
 
 
 //• Print a new set of invitation messages, one for each person in your list.
-/*for (let i = 0; i < guest.length; i++) {
-    alert("Assalam o Aliakum, " + guest[i] + ". Hope you are doing well, I am inviting you to my tomorrow dinner , to discuss the Web 3.0.");
-}*/
+for (let i = 0; i < guest.length; i++) {
+    console.log("Assalam o Aliakum, " + guest[i] + ". Hope you are doing well, I am inviting you to my tomorrow dinner , to discuss the Web 3.0.");
+}
 
-alert("Sorry, Guys due to some problem I can only able to invite two people for dinner");
+
+//• Start with your program from Exercise 16. 
+Add a new line that prints a message saying that you can invite only two people
+for dinner.
+
+/* • Remove guests from your list one at a time until only two names remain in your list. 
+Each time you pop a name from your list, 
+print a message to that person letting them know you’re sorry you can’t invite them to dinner.*/
+console.log("Sorry, Guys due to some problem I can only able to invite two people for dinner");
 var i = guest.length
 for (i; i >= 3; i--) {
     guest.pop()
 }
-var i = guest.length
-for (i; i >= guest.length; i--) {
-    alert("Assalam o Aliakum, " + guest[i] + ". Hope you are doing well, I am Only inviting you to my tomorrow dinner , to discuss the Web 3.0.");
+
+//• Print a message to each of the two people still on your list, letting them know they’re still invited.
+for (i = 0; i <= 1; i++) {
+    console.log("Assalam o Aliakum, " + guest[i] + ". Hope you are doing well, I am Only inviting you to my tomorrow dinner , to discuss the Web 3.0.");
 }
 
-for (let i = 0; i < guest.length; i++) {
-    alert("Guest List : " + guest[i])
+//• Remove the last two names from your list, so you have an empty list. 
+var i = guest.length
+for (i; i >= 0; i--) {
+    guest.pop()
 }
+
+//Print your list to make sure you actually have an empty list at the end of your program.
+console.log("Lenght Of List : " + guest.length + " after remove the last 2 Peple names")
