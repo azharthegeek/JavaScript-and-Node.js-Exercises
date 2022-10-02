@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Exercise 21 "Open Console to see the output"</h1>
+    <!-- They think of something you could store in a JavaScript Object. 
+    Write a program that creates Objects containing these items. -->
+    <script>
+        const laptop = {
+            laptopname: "Dell 5510",
+            processor: "I7 HQ",
+            generation: "6th generation",
+            ram: "16GB",
+            storage: "256GB",
+            price: "120k"
+        };
+        console.log("Object Details printout: ")
+        for (let key in laptop) {
+            console.log(key + " : " + laptop[key])
+        }
+    </script>
+</body>
+
+</html>
