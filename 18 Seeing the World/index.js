@@ -1,5 +1,5 @@
 //Seeing the World: Think of at least five places in the world you’d like to visit.
-let places_to_visit = [
+var places_to_visit = [
     "Makkah",
     "Madina",
     "Masjid Aqsa",
@@ -14,15 +14,32 @@ for (let i = 0; i < places_to_visit.length; i++) {
     console.log(places_to_visit[i])
 }
 //• Print your array in alphabetical order without modifying the actual list.
-function alphabetical_order() {
+// Helpfull Resource https://bobbyhadz.com/blog/javascript-sort-array-without-mutating
 
-    console.log("\nArray in alphabetical order without modifying the actual list :");
-    for (let i = 0; i < places_to_visit.length; i++) {
-        console.log(places_to_visit.sort()[i])
-    }
+
+var temp = [...places_to_visit];
+temp.sort();
+console.log("\nArray in alphabetical order without modifying the actual list :");
+for (let i = 0; i < temp.length; i++) {
+    console.log(temp[i]);
 }
-alphabetical_order()
-    //• Show that your array is still in its original order by printing it.
+
+//• Show that your array is still in its original order by printing it.
+console.log("\nArray is still in its original order :");
+for (let j = 0; j < places_to_visit.length; j++) {
+    console.log(places_to_visit[j])
+}
+
+//• Print your array in reverse alphabetical order without changing the order of the original list.
+var temp = [...places_to_visit];
+temp = temp.sort()
+temp = temp.reverse();
+console.log("\nArray in reverse alphabetical order without changing the order of the original list :");
+for (let i = 0; i < temp.length; i++) {
+    console.log(temp[i]);
+}
+
+//• Show that your array is still in its original order by printing it.
 console.log("\nArray is still in its original order :");
 for (let j = 0; j < places_to_visit.length; j++) {
     console.log(places_to_visit[j])
