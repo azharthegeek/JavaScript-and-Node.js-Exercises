@@ -1,4 +1,4 @@
-const guest = [
+var guest = [
     "Mehar",
     "Ajmal",
     "Faisal",
@@ -29,8 +29,8 @@ for (let i = 0; i < guest.length; i++) {
 
 
 //• Start with your program from Exercise 16. 
-Add a new line that prints a message saying that you can invite only two people
-for dinner.
+//Add a new line that prints a message saying that you can invite only two people
+//for dinner.
 
 /* • Remove guests from your list one at a time until only two names remain in your list. 
 Each time you pop a name from your list, 
