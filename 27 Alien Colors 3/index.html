@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Exercise 27 "Open Console to see the output"</h1>
+    <script>
+        function alien_game() {
+            if (alien_color == "green") {
+                console.log("\nAlien Color : Green")
+                console.log("You Just Earned 5 Points! for shooting green Alien")
+            } else if (alien_color == "yellow") {
+                console.log("\nAlien Color : Yellow")
+                console.log("You Just Earned 10 Points! for shooting yellow Alien")
+            } else if (alien_color == "red") {
+                console.log("\nAlien Color : Red")
+                console.log("You Just Earned 15 Points! for shooting red Alien")
+            }
+        }
+
+        var alien_color = "green"
+        alien_game();
+        var alien_color = "yellow"
+        alien_game();
+        var alien_color = "red"
+        alien_game();
+    </script>
+</body>
+
+</html>

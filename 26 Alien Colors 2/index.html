@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <h1>Exercise 26 "Open Console to see the output"</h1>
+    <script>
+        //• If the alien’s color is green, print a statement that the player just earned 5 points for shooting the alien.
+
+        //• If the alien’s color isn’t green, print a statement that the player just earned 10 points.
+        var alien_color = "green"
+
+        function alien_game() {
+            if (alien_color == "green") {
+                console.log("\nAlien Color : Green")
+                console.log("You Just Earned 5 Points! for shooting the Alien")
+            } else if (alien_color != "green") {
+                console.log("\nAlien Color : Other Than Green")
+                console.log("You Just Earned 10 Points!")
+            }
+        }
+
+        //• Write one version of this program that runs the if block and another that runs the else block.
+        alien_game();
+        var alien_color = "yellow"
+        alien_game();
+    </script>
+</body>
+
+</html>
