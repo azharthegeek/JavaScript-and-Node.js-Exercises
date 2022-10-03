@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        alert("Simple BMI Calculator");
+        var height = prompt("Enter your hight in inches: ");
+        var weight = prompt("Enter your weight in pounds: ");
+
+        var cm = height * 2.54;
+        var kilos = weight / 2.2046;
+
+        var m = cm / 100;
+
+        var bmi = kilos / (m ** 2);
+        alert("Your BMI is ${bmi}.");
+    </script>
+</body>
+
+</html>
