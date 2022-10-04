@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Exercise 31 "Open Console to see the Output"</h1>
+    <script>
+        var usernmaes = [
+            "Azhar",
+            "Mehar",
+            "Ajmal",
+            "Arham",
+            "Ali",
+            "admin"
+        ];
+
+        console.log("Users list before empty opration | Array Length :  " + usernmaes.length);
+        for (let i = 0; i < usernmaes.length; i++) {
+            console.log("\nUser " + (i + 1) + " Name : " + usernmaes[i]);
+        };
+        // Remove all of the usernames from your array, and make sure the correct message is printed.
+        console.log("Users list After empty opration : ");
+        while ((usernmaes.length) > 0) {
+            usernmaes.pop()
+        };
+        //If the list is empty, print the message We need to find some users!
+        if (usernmaes == 0) {
+            console.log("We need to find some users! | User data Array become : " + usernmaes.length);
+        }
+    </script>
+
+</body>
+
+</html>
