@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Exercise 40 "Open Console to see the output"</h1>
+    <script>
+        function make_album(artist, title, tracks = null) {
+            let album = {
+                artist: artist,
+                title: title,
+                tracks: tracks
+            }
+            return album;
+
+        }
+        let album1 = make_album("Atif Aslam", "Kissmat main meri");
+        let album2 = make_album("Ali Zafar", "Khell jamai ga seeti bajai gi");
+        let album3 = make_album("Rahat Fateh Ali khan", "merai pass tum ho");
+        console.log(album1);
+        console.log(album2);
+        console.log(album3);
+
+        //album with tracks numbers
+        let album4 = make_album("Shae Gill", "Pasoori", 100);
+        console.log(album4);
+    </script>
+</body>
+
+</html>

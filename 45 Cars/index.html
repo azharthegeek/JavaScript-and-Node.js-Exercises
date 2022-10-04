@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Exercise 45 "Open console to see the output"</h1>
+</body>
+<script>
+    function carfeature(manufacturer, model, ...feature) {
+        let car = {
+            manufacturer: manufacturer,
+            model: model,
+            feature: feature
+        }
+        console.log("I want a " + manufacturer + " having \"" + model + "\" number with " + feature);
+        return car;
+    }
+
+    let car1 = carfeature("Tesla", "Model S", "4WD", "Auto pilot", "Airbags", "Leather Seats", "White Color");
+    let car2 = carfeature("Toyota", "Corolla", "4WD", "ABS", "Airbags", "Leather Seats", "Black Color");
+    let car3 = carfeature("Honda", "Civic", "4WD", "ABS", "Airbags", "Leather Seats", "Red Color");
+
+    console.log(car1);
+    console.log(car2);
+    console.log(car3);
+</script>
+
+</html>

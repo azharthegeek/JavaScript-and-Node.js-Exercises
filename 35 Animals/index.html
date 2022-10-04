@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Exercise 35 "Open Console to see the output"</h1>
+    <script>
+        //Think of at least three different animals that have a common characteristic.
+        let animals = [
+            "Dolphin",
+            "Cat",
+            "Goat"
+        ];
+
+        // Store the names of these animals in a list, and then use a for loop to print out the name of each animal.
+        console.log("Three Animals that have a common characteristic : ")
+        for (let i = 0; i < animals.length; i++) {
+            console.log(animals[i]);
+
+        }
+        //• Modify your program to print a statement about each animal, such as A dog would make a great pet. 
+        console.log("\nThree Animals that have a common characteristic after for loop modification : ");
+        for (let j = 0; j < animals.length; j++) {
+            console.log(`A ${animals[j]} would make a great pet`);
+        }
+        //Add a line at the end of your program stating what these animals have in common.
+        console.log("\nAbout Mammal that have a common characteristic : ");
+        console.log(`Characteristics do mammals have in common? Mammals have hair or fur; are warm-blooded; most are born alive; the young are fed milk produced by the mother's mammary glands; and they have a more complex brain than other animals`)
+    </script>
+</body>
+
+</html>

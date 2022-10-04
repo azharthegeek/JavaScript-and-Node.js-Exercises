@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Exercise 33 "Open Console to see the result"</h1>
+    <script>
+        let my_array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        //Loop through the array
+        console.log("Loop through the array");
+        for (let i = 0; i < my_array.length; i++) {
+            console.log(my_array[i]);
+        }
+        //Use an if-else chain inside the loop to print the proper ordinal ending for each number.
+        console.log("\nUse an if-else chain inside the loop to print the proper ordinal ending for each number.");
+        for (let i = 0; i < my_array.length; i++) {
+            if (my_array[i] == 1) {
+                console.log(my_array[i] + "st");
+            } else if (my_array[i] == 2) {
+                console.log(my_array[i] + "nd");
+            } else if (my_array[i] == 3) {
+                console.log(my_array[i] + "rd");
+            } else {
+                console.log(my_array[i] + "th");
+            }
+        }
+    </script>
+
+</body>
+
+</html>
